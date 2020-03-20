@@ -14,8 +14,7 @@
  * limitations under the License.
  */
 
-// TODO: rename package
-package main.examples;
+package com.example.mediatranslation;
 
 // [START media_translation_translate_from_file]
 
@@ -32,7 +31,8 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-public class MediaTranslateExample {
+public class TranslateFromFile {
+
   public static void translateFromFile() throws IOException {
     // TODO(developer): Replace these variables before running the sample.
     String filePath = "path/to/audio.raw";
@@ -61,12 +61,12 @@ public class MediaTranslateExample {
           speechTranslationServiceClient.streamingTranslateSpeechCallable().call();
 
       // The first request contains the configuration.
-      StreamingTranslateSpeechRequest request =
-          StreamingTranslateSpeechRequest.newBuilder().setAudioContent(audioContent).build();
+      StreamingTranslateSpeechRequest requestConfig =
+              StreamingTranslateSpeechRequest.newBuilder().setStreamingConfig(config).build();
 
       // The second request contains the audio
-      StreamingTranslateSpeechRequest requestConfig =
-          StreamingTranslateSpeechRequest.newBuilder().setStreamingConfig(config).build();
+      StreamingTranslateSpeechRequest request =
+              StreamingTranslateSpeechRequest.newBuilder().setAudioContent(audioContent).build();
 
       bidiStream.send(requestConfig);
       bidiStream.send(request);
