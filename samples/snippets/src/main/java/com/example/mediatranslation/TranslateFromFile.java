@@ -36,6 +36,7 @@ public class TranslateFromFile {
   public static void main(String[] args) throws IOException {
     translateFromFile("resources/audio.raw");
   }
+
   public static void translateFromFile() throws IOException {
     // TODO(developer): Replace these variables before running the sample.
     String filePath = "path/to/audio.raw";
