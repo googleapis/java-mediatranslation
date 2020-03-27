@@ -1,5 +1,5 @@
 /*
- * Copyright 2020 Google LLC.
+ * Copyright 2020 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,6 +36,7 @@ import javax.sound.sampled.DataLine;
 import javax.sound.sampled.TargetDataLine;
 
 public class TranslateFromMic {
+
   public static void translateFromMic() throws IOException {
     ResponseObserver<StreamingTranslateSpeechResponse> responseObserver = null;
 

@@ -1,5 +1,5 @@
 /*
- * Copyright 2020 Google LLC.
+ * Copyright 2020 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -33,10 +33,6 @@ import java.nio.file.Paths;
 
 public class TranslateFromFile {
 
-  public static void main(String[] args) throws IOException {
-    translateFromFile("resources/audio.raw");
-  }
-
   public static void translateFromFile() throws IOException {
     // TODO(developer): Replace these variables before running the sample.
     String filePath = "path/to/audio.raw";
@@ -47,8 +43,7 @@ public class TranslateFromFile {
     // Initialize client that will be used to send requests. This client only needs to be created
     // once, and can be reused for multiple requests. After completing all of your requests, call
     // the "close" method on the client to safely clean up any remaining background resources.
-    try (SpeechTranslationServiceClient speechTranslationServiceClient =
-        SpeechTranslationServiceClient.create()) {
+    try (SpeechTranslationServiceClient client = SpeechTranslationServiceClient.create()) {
       Path path = Paths.get(filePath);
       byte[] content = Files.readAllBytes(path);
       ByteString audioContent = ByteString.copyFrom(content);
@@ -65,15 +60,15 @@ public class TranslateFromFile {
           StreamingTranslateSpeechConfig.newBuilder().setAudioConfig(translateSpeechConfig).build();
 
       BidiStream<StreamingTranslateSpeechRequest, StreamingTranslateSpeechResponse> bidiStream =
-          speechTranslationServiceClient.streamingTranslateSpeechCallable().call();
+          client.streamingTranslateSpeechCallable().call();
 
       // The first request contains the configuration.
       StreamingTranslateSpeechRequest requestConfig =
-              StreamingTranslateSpeechRequest.newBuilder().setStreamingConfig(config).build();
+          StreamingTranslateSpeechRequest.newBuilder().setStreamingConfig(config).build();
 
       // The second request contains the audio
       StreamingTranslateSpeechRequest request =
-              StreamingTranslateSpeechRequest.newBuilder().setAudioContent(audioContent).build();
+          StreamingTranslateSpeechRequest.newBuilder().setAudioContent(audioContent).build();
 
       bidiStream.send(requestConfig);
       bidiStream.send(request);
