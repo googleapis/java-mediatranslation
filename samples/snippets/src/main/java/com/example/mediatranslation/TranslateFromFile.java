@@ -48,7 +48,7 @@ public class TranslateFromFile {
       byte[] content = Files.readAllBytes(path);
       ByteString audioContent = ByteString.copyFrom(content);
 
-      TranslateSpeechConfig translateSpeechConfig =
+      TranslateSpeechConfig audioConfig =
           TranslateSpeechConfig.newBuilder()
               .setAudioEncoding("linear16")
               .setSampleRateHertz(16000)
@@ -57,7 +57,7 @@ public class TranslateFromFile {
               .build();
 
       StreamingTranslateSpeechConfig config =
-          StreamingTranslateSpeechConfig.newBuilder().setAudioConfig(translateSpeechConfig).build();
+          StreamingTranslateSpeechConfig.newBuilder().setAudioConfig(audioConfig).build();
 
       BidiStream<StreamingTranslateSpeechRequest, StreamingTranslateSpeechResponse> bidiStream =
           client.streamingTranslateSpeechCallable().call();

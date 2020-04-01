@@ -77,7 +77,7 @@ public class TranslateFromMic {
       ClientStream<StreamingTranslateSpeechRequest> clientStream =
           client.streamingTranslateSpeechCallable().splitCall(responseObserver);
 
-      TranslateSpeechConfig translateSpeechConfig =
+      TranslateSpeechConfig audioConfig =
           TranslateSpeechConfig.newBuilder()
               .setAudioEncoding("linear16")
               .setSourceLanguageCode("en-US")
@@ -86,7 +86,7 @@ public class TranslateFromMic {
               .build();
 
       StreamingTranslateSpeechConfig streamingRecognitionConfig =
-          StreamingTranslateSpeechConfig.newBuilder().setAudioConfig(translateSpeechConfig).build();
+          StreamingTranslateSpeechConfig.newBuilder().setAudioConfig(audioConfig).build();
 
       StreamingTranslateSpeechRequest request =
           StreamingTranslateSpeechRequest.newBuilder()
