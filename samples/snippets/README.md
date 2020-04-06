@@ -39,14 +39,10 @@ export GOOGLE_APPLICATION_CREDENTIALS=/path/to/your-project-credentials.json
 After you have authorized, you can translate media.
 
 
-Translation from a file
+## Run
+Run all tests:
 ```
-mvn exec:java -DTranslate -Dexec.args="translate_from_file path/to/audio.raw"
-```
-
-Translation from a microphone
-```
-mvn exec:java -DTranslate -Dexec.args="translate_from_mic"
+mvn clean verify
 ```
 
 [shell_img]: https://gstatic.com/cloudssh/images/open-btn.png
