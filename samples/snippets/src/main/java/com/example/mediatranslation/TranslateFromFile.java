@@ -57,7 +57,7 @@ public class TranslateFromFile {
               .build();
 
       StreamingTranslateSpeechConfig config =
-          StreamingTranslateSpeechConfig.newBuilder().setAudioConfig(audioConfig).build();
+          StreamingTranslateSpeechConfig.newBuilder().setAudioConfig(audioConfig).setSingleUtterance(true).build();
 
       BidiStream<StreamingTranslateSpeechRequest, StreamingTranslateSpeechResponse> bidiStream =
           client.streamingTranslateSpeechCallable().call();
