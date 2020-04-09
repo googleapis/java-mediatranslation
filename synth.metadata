@@ -1,6 +1,13 @@
 {
-  "updateTime": "2020-04-06T23:57:28.767376Z",
+  "updateTime": "2020-04-09T01:34:01.664232Z",
   "sources": [
+    {
+      "git": {
+        "name": ".",
+        "remote": "https://github.com/googleapis/java-mediatranslation.git",
+        "sha": "35ca7a40c3537261513b37497b550d141b790375"
+      }
+    },
     {
       "git": {
         "name": "googleapis",
