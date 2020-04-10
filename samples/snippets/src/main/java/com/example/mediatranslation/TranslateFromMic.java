@@ -33,11 +33,16 @@ import javax.sound.sampled.AudioFormat;
 import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.DataLine;
+import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.TargetDataLine;
 
 public class TranslateFromMic {
 
-  public static void translateFromMic() throws IOException {
+  public static void main(String[] args) throws IOException, LineUnavailableException {
+    translateFromMic();
+  }
+
+  public static void translateFromMic() throws IOException, LineUnavailableException {
     ResponseObserver<StreamingTranslateSpeechResponse> responseObserver = null;
 
     // Initialize client that will be used to send requests. This client only needs to be created
@@ -124,10 +129,7 @@ public class TranslateFromMic {
                 .build();
         clientStream.send(request);
       }
-    } catch (Exception e) {
-      System.out.println(e);
     }
-    responseObserver.onComplete();
   }
 }
 // [END media_translation_translate_from_mic]
