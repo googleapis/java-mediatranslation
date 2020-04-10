@@ -1,20 +1,26 @@
 {
-  "updateTime": "2020-03-19T09:20:36.505301Z",
+  "updateTime": "2020-04-09T10:11:04.454895Z",
   "sources": [
+    {
+      "git": {
+        "name": ".",
+        "remote": "https://github.com/googleapis/java-mediatranslation.git",
+        "sha": "e72d50807ec081607ded0b27b0f6f62d0f6aaa97"
+      }
+    },
     {
       "git": {
         "name": "googleapis",
         "remote": "https://github.com/googleapis/googleapis.git",
-        "sha": "275fbcce2c900278d487c33293a3c7e1fbcd3a34",
-        "internalRef": "301661567",
-        "log": "275fbcce2c900278d487c33293a3c7e1fbcd3a34\nfeat: pubsub/v1 add an experimental filter field to Subscription\n\nPiperOrigin-RevId: 301661567\n\nf2b18cec51d27c999ad30011dba17f3965677e9c\nFix: UpdateBackupRequest.backup is a resource, not a resource reference - remove annotation.\n\nPiperOrigin-RevId: 301636171\n\n800384063ac93a0cac3a510d41726fa4b2cd4a83\nCloud Billing Budget API v1beta1\nModified api documentation to include warnings about the new filter field.\n\nPiperOrigin-RevId: 301634389\n\n0cc6c146b660db21f04056c3d58a4b752ee445e3\nCloud Billing Budget API v1alpha1\nModified api documentation to include warnings about the new filter field.\n\nPiperOrigin-RevId: 301630018\n\nff2ea00f69065585c3ac0993c8b582af3b6fc215\nFix: Add resource definition for a parent of InspectTemplate which was otherwise missing.\n\nPiperOrigin-RevId: 301623052\n\n55fa441c9daf03173910760191646399338f2b7c\nAdd proto definition for AccessLevel, AccessPolicy, and ServicePerimeter.\n\nPiperOrigin-RevId: 301620844\n\n"
+        "sha": "d741cd976975c745d0199987aff0e908b8352992",
+        "internalRef": "305561906"
       }
     },
     {
       "git": {
         "name": "synthtool",
         "remote": "https://github.com/googleapis/synthtool.git",
-        "sha": "bcad3e01b69851ad682a87f8202003a1683ad73a"
+        "sha": "7f8e62aa3edd225f76347a16f92e400661fdfb52"
       }
     }
   ],

@@ -20,22 +20,19 @@ If you are using Maven with [BOM][libraries-bom], add this to your pom.xml file
     <dependency>
       <groupId>com.google.cloud</groupId>
       <artifactId>libraries-bom</artifactId>
-      <version>4.2.0</version>
+      <version>4.4.1</version>
       <type>pom</type>
       <scope>import</scope>
     </dependency>
   </dependencies>
 </dependencyManagement>
-
 <dependencies>
   <dependency>
     <groupId>com.google.cloud</groupId>
     <artifactId>google-cloud-mediatranslation</artifactId>
   </dependency>
-
+</dependencies>
 ```
-
-[//]: # ({x-version-update-start:google-cloud-mediatranslation:released})
 
 If you are using Maven without BOM, add this to your dependencies:
 
@@ -43,18 +40,20 @@ If you are using Maven without BOM, add this to your dependencies:
 <dependency>
   <groupId>com.google.cloud</groupId>
   <artifactId>google-cloud-mediatranslation</artifactId>
-  <version>0.1.0</version>
+  <version>0.1.1</version>
 </dependency>
 
 ```
 
+[//]: # ({x-version-update-start:google-cloud-mediatranslation:released})
+
 If you are using Gradle, add this to your dependencies
 ```Groovy
-compile 'com.google.cloud:google-cloud-mediatranslation:0.1.0'
+compile 'com.google.cloud:google-cloud-mediatranslation:0.1.1'
 ```
 If you are using SBT, add this to your dependencies
 ```Scala
-libraryDependencies += "com.google.cloud" % "google-cloud-mediatranslation" % "0.1.0"
+libraryDependencies += "com.google.cloud" % "google-cloud-mediatranslation" % "0.1.1"
 ```
 [//]: # ({x-version-update-end})
 
