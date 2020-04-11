@@ -43,6 +43,7 @@ public class TranslateFromMic {
   }
 
   public static void translateFromMic() throws IOException, LineUnavailableException {
+
     ResponseObserver<StreamingTranslateSpeechResponse> responseObserver = null;
 
     // Initialize client that will be used to send requests. This client only needs to be created
