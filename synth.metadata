@@ -4,7 +4,7 @@
       "git": {
         "name": ".",
         "remote": "https://github.com/googleapis/java-mediatranslation.git",
-        "sha": "32bf8385a1df637e03c7a30959663298fdfb23f6"
+        "sha": "d5b38890565a89f1594bba606db04cfade229c77"
       }
     },
     {
@@ -19,7 +19,7 @@
       "git": {
         "name": "synthtool",
         "remote": "https://github.com/googleapis/synthtool.git",
-        "sha": "80003a3de2d8a75f5b47cb2e77e018f7f0f776cc"
+        "sha": "916c10e8581804df2b48a0f0457d848f3faa582e"
       }
     }
   ],
@@ -92,7 +92,6 @@
     "CODE_OF_CONDUCT.md",
     "CONTRIBUTING.md",
     "LICENSE",
-    "README.md",
     "codecov.yaml",
     "google-cloud-mediatranslation/src/main/java/com/google/cloud/mediatranslation/v1beta1/SpeechTranslationServiceClient.java",
     "google-cloud-mediatranslation/src/main/java/com/google/cloud/mediatranslation/v1beta1/SpeechTranslationServiceSettings.java",
