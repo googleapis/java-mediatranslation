@@ -78,7 +78,7 @@ public class ITSystemTest {
     // The first request contains the configuration.
     StreamingTranslateSpeechRequest requestConfig =
         StreamingTranslateSpeechRequest.newBuilder().setStreamingConfig(config).build();
-
+    // The second request contains the audio
     StreamingTranslateSpeechRequest request =
         StreamingTranslateSpeechRequest.newBuilder().setAudioContent(audioContent).build();
     bidiStream.send(requestConfig);
