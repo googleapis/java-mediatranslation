@@ -56,7 +56,7 @@ public class ITSystemTest {
   @SuppressWarnings("all")
   public void streamingTranslateSpeechTest()
       throws ExecutionException, InterruptedException, IOException {
-    String filePath = "../samples/snippets/resources/audio.raw";
+    String filePath = "src/test/resources/audio.raw";
 
     Path path = Paths.get(filePath);
     byte[] content = Files.readAllBytes(path);
