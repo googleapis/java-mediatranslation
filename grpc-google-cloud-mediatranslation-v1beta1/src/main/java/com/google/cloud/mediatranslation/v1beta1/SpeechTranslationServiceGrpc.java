@@ -20,13 +20,7 @@ import static io.grpc.stub.ClientCalls.asyncBidiStreamingCall;
 import static io.grpc.stub.ServerCalls.asyncBidiStreamingCall;
 import static io.grpc.stub.ServerCalls.asyncUnimplementedStreamingCall;
 
-/**
- *
- *
- * <pre>
- * Provides translation from/to media types.
- * </pre>
- */
+/** */
 @javax.annotation.Generated(
     value = "by gRPC proto compiler",
     comments = "Source: google/cloud/mediatranslation/v1beta1/media_translation.proto")
@@ -134,23 +128,10 @@ public final class SpeechTranslationServiceGrpc {
     return SpeechTranslationServiceFutureStub.newStub(factory, channel);
   }
 
-  /**
-   *
-   *
-   * <pre>
-   * Provides translation from/to media types.
-   * </pre>
-   */
+  /** */
   public abstract static class SpeechTranslationServiceImplBase implements io.grpc.BindableService {
 
-    /**
-     *
-     *
-     * <pre>
-     * Performs bidirectional streaming speech translation: receive results while
-     * sending audio. This method is only available via the gRPC API (not REST).
-     * </pre>
-     */
+    /** */
     public io.grpc.stub.StreamObserver<
             com.google.cloud.mediatranslation.v1beta1.StreamingTranslateSpeechRequest>
         streamingTranslateSpeech(
@@ -174,13 +155,7 @@ public final class SpeechTranslationServiceGrpc {
     }
   }
 
-  /**
-   *
-   *
-   * <pre>
-   * Provides translation from/to media types.
-   * </pre>
-   */
+  /** */
   public static final class SpeechTranslationServiceStub
       extends io.grpc.stub.AbstractAsyncStub<SpeechTranslationServiceStub> {
     private SpeechTranslationServiceStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
@@ -193,14 +168,7 @@ public final class SpeechTranslationServiceGrpc {
       return new SpeechTranslationServiceStub(channel, callOptions);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Performs bidirectional streaming speech translation: receive results while
-     * sending audio. This method is only available via the gRPC API (not REST).
-     * </pre>
-     */
+    /** */
     public io.grpc.stub.StreamObserver<
             com.google.cloud.mediatranslation.v1beta1.StreamingTranslateSpeechRequest>
         streamingTranslateSpeech(
@@ -213,13 +181,7 @@ public final class SpeechTranslationServiceGrpc {
     }
   }
 
-  /**
-   *
-   *
-   * <pre>
-   * Provides translation from/to media types.
-   * </pre>
-   */
+  /** */
   public static final class SpeechTranslationServiceBlockingStub
       extends io.grpc.stub.AbstractBlockingStub<SpeechTranslationServiceBlockingStub> {
     private SpeechTranslationServiceBlockingStub(
@@ -234,13 +196,7 @@ public final class SpeechTranslationServiceGrpc {
     }
   }
 
-  /**
-   *
-   *
-   * <pre>
-   * Provides translation from/to media types.
-   * </pre>
-   */
+  /** */
   public static final class SpeechTranslationServiceFutureStub
       extends io.grpc.stub.AbstractFutureStub<SpeechTranslationServiceFutureStub> {
     private SpeechTranslationServiceFutureStub(
