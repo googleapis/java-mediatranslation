@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.0](https://www.github.com/googleapis/java-mediatranslation/compare/v0.5.2...v0.6.0) (2021-08-04)
+
+
+### Features
+
+* configure initial sp version ([#494](https://www.github.com/googleapis/java-mediatranslation/issues/494)) ([7345fe5](https://www.github.com/googleapis/java-mediatranslation/commit/7345fe5007cba365c2d08f42a7edc4fcbbe78151))
+
 ### [0.5.2](https://www.github.com/googleapis/java-mediatranslation/compare/v0.5.1...v0.5.2) (2021-07-01)
 
 
