@@ -22,7 +22,7 @@ If you are using Maven, add this to your pom.xml file:
 <dependency>
   <groupId>com.google.cloud</groupId>
   <artifactId>google-cloud-mediatranslation</artifactId>
-  <version>0.7.1</version>
+  <version>0.7.2</version>
 </dependency>
 
 ```
@@ -30,13 +30,13 @@ If you are using Maven, add this to your pom.xml file:
 If you are using Gradle without BOM, add this to your dependencies
 
 ```Groovy
-implementation 'com.google.cloud:google-cloud-mediatranslation:0.7.1'
+implementation 'com.google.cloud:google-cloud-mediatranslation:0.7.2'
 ```
 
 If you are using SBT, add this to your dependencies
 
 ```Scala
-libraryDependencies += "com.google.cloud" % "google-cloud-mediatranslation" % "0.7.1"
+libraryDependencies += "com.google.cloud" % "google-cloud-mediatranslation" % "0.7.2"
 ```
 
 ## Authentication
@@ -76,12 +76,12 @@ use this Media Translation API Client Library.
 
 ## Samples
 
-Samples are in the [`samples/`](https://github.com/googleapis/java-mediatranslation/tree/master/samples) directory.
+Samples are in the [`samples/`](https://github.com/googleapis/java-mediatranslation/tree/main/samples) directory.
 
 | Sample                      | Source Code                       | Try it |
 | --------------------------- | --------------------------------- | ------ |
-| Translate From File | [source code](https://github.com/googleapis/java-mediatranslation/blob/master/samples/snippets/src/main/java/com/example/mediatranslation/TranslateFromFile.java) | [![Open in Cloud Shell][shell_img]](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/googleapis/java-mediatranslation&page=editor&open_in_editor=samples/snippets/src/main/java/com/example/mediatranslation/TranslateFromFile.java) |
-| Translate From Mic | [source code](https://github.com/googleapis/java-mediatranslation/blob/master/samples/snippets/src/main/java/com/example/mediatranslation/TranslateFromMic.java) | [![Open in Cloud Shell][shell_img]](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/googleapis/java-mediatranslation&page=editor&open_in_editor=samples/snippets/src/main/java/com/example/mediatranslation/TranslateFromMic.java) |
+| Translate From File | [source code](https://github.com/googleapis/java-mediatranslation/blob/main/samples/snippets/src/main/java/com/example/mediatranslation/TranslateFromFile.java) | [![Open in Cloud Shell][shell_img]](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/googleapis/java-mediatranslation&page=editor&open_in_editor=samples/snippets/src/main/java/com/example/mediatranslation/TranslateFromFile.java) |
+| Translate From Mic | [source code](https://github.com/googleapis/java-mediatranslation/blob/main/samples/snippets/src/main/java/com/example/mediatranslation/TranslateFromMic.java) | [![Open in Cloud Shell][shell_img]](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/googleapis/java-mediatranslation&page=editor&open_in_editor=samples/snippets/src/main/java/com/example/mediatranslation/TranslateFromMic.java) |
 
 
 
@@ -197,10 +197,10 @@ Java is a registered trademark of Oracle and/or its affiliates.
 [developer-console]: https://console.developers.google.com/
 [create-project]: https://cloud.google.com/resource-manager/docs/creating-managing-projects
 [cloud-sdk]: https://cloud.google.com/sdk/
-[troubleshooting]: https://github.com/googleapis/google-cloud-common/blob/master/troubleshooting/readme.md#troubleshooting
-[contributing]: https://github.com/googleapis/java-mediatranslation/blob/master/CONTRIBUTING.md
-[code-of-conduct]: https://github.com/googleapis/java-mediatranslation/blob/master/CODE_OF_CONDUCT.md#contributor-code-of-conduct
-[license]: https://github.com/googleapis/java-mediatranslation/blob/master/LICENSE
+[troubleshooting]: https://github.com/googleapis/google-cloud-common/blob/main/troubleshooting/readme.md#troubleshooting
+[contributing]: https://github.com/googleapis/java-mediatranslation/blob/main/CONTRIBUTING.md
+[code-of-conduct]: https://github.com/googleapis/java-mediatranslation/blob/main/CODE_OF_CONDUCT.md#contributor-code-of-conduct
+[license]: https://github.com/googleapis/java-mediatranslation/blob/main/LICENSE
 
 [enable-api]: https://console.cloud.google.com/flows/enableapi?apiid=mediatranslation.googleapis.com
 [libraries-bom]: https://github.com/GoogleCloudPlatform/cloud-opensource-java/wiki/The-Google-Cloud-Platform-Libraries-BOM
