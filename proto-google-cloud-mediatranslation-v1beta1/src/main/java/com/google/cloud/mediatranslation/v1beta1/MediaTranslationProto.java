@@ -61,8 +61,7 @@ public final class MediaTranslationProto {
   static {
     java.lang.String[] descriptorData = {
       "\n"
-          + "=google/cloud/mediatranslation/v1beta1/media_translation.proto\022%google.cloud.me"
-          + "diatranslation.v1beta1\032\037google/api/field_behavior.proto\032\027google/rpc/status.proto\032\027google/api/client.proto\"\256\001\n"
+          + "=google/cloud/mediatranslation/v1beta1/media_translation.proto\022%google.cloud.mediatranslation.v1beta1\032\037google/api/field_behavior.proto\032\027google/rpc/status.proto\032\027google/api/client.proto\"\256\001\n"
           + "\025TranslateSpeechConfig\022\033\n"
           + "\016audio_encoding\030\001 \001(\tB\003\340A\002\022!\n"
           + "\024source_language_code\030\002 \001(\tB\003\340A\002\022!\n"
@@ -97,8 +96,7 @@ public final class MediaTranslationProto {
           + "\030SpeechTranslationService\022\261\001\n"
           + "\030StreamingTranslateSpeech\022F.google.cloud.mediatra"
           + "nslation.v1beta1.StreamingTranslateSpeechRequest\032G.google.cloud.mediatranslation"
-          + ".v1beta1.StreamingTranslateSpeechRespons"
-          + "e\"\000(\0010\001\032S\312A\037mediatranslation.googleapis.com\322A.https://www.googleapis.com/auth/cloud-platformB\231\002\n"
+          + ".v1beta1.StreamingTranslateSpeechResponse\"\000(\0010\001\032S\312A\037mediatranslation.googleapis.com\322A.https://www.googleapis.com/auth/cloud-platformB\231\002\n"
           + ")com.google.cloud.mediatranslation.v1beta1B\025MediaTranslationProt"
           + "oP\001ZUgoogle.golang.org/genproto/googleapis/cloud/mediatranslation/v1beta1;mediat"
           + "ranslation\370\001\001\252\002%Google.Cloud.MediaTransl"
