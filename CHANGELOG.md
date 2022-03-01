@@ -1,5 +1,19 @@
 # Changelog
 
+### [0.7.8](https://github.com/googleapis/java-mediatranslation/compare/v0.7.7...v0.7.8) (2022-02-28)
+
+
+### Dependencies
+
+* update actions/setup-java action to v3 ([#615](https://github.com/googleapis/java-mediatranslation/issues/615)) ([47397bd](https://github.com/googleapis/java-mediatranslation/commit/47397bd8024ef5cbc0702e1e4b64498cddfb19d7))
+
+### [0.7.7](https://github.com/googleapis/java-mediatranslation/compare/v0.7.6...v0.7.7) (2022-02-11)
+
+
+### Dependencies
+
+* update actions/github-script action to v6 ([#608](https://github.com/googleapis/java-mediatranslation/issues/608)) ([75234b4](https://github.com/googleapis/java-mediatranslation/commit/75234b4534cda832b565920016a1c3d43dcb7098))
+
 ### [0.7.6](https://github.com/googleapis/java-mediatranslation/compare/v0.7.5...v0.7.6) (2022-02-03)
 
 
