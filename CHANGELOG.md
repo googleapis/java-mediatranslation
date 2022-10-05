@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.9.6](https://github.com/googleapis/java-mediatranslation/compare/v0.9.5...v0.9.6) (2022-10-05)
+
+
+### Bug Fixes
+
+* update protobuf to v3.21.7 ([ee07847](https://github.com/googleapis/java-mediatranslation/commit/ee07847d9df3591ee7332c954e6057782965b199))
+
 ## [0.9.5](https://github.com/googleapis/java-mediatranslation/compare/v0.9.4...v0.9.5) (2022-10-03)
 
 
