@@ -12,6 +12,13 @@ Java idiomatic client for [Media Translation API][product-docs].
 > make backwards-incompatible changes.
 
 
+:bus: In October 2022, this library has moved to
+[google-cloud-java/java-mediatranslation](
+https://github.com/googleapis/google-cloud-java/tree/main/java-mediatranslation).
+This repository will be archived in the future.
+Future releases will appear in the new repository (https://github.com/googleapis/google-cloud-java/releases).
+The Maven artifact coordinates (`com.google.cloud:google-cloud-mediatranslation`) remain the same.
+
 ## Quickstart
 
 
@@ -30,13 +37,13 @@ If you are using Maven, add this to your pom.xml file:
 If you are using Gradle without BOM, add this to your dependencies:
 
 ```Groovy
-implementation 'com.google.cloud:google-cloud-mediatranslation:0.9.6'
+implementation 'com.google.cloud:google-cloud-mediatranslation:0.11.0'
 ```
 
 If you are using SBT, add this to your dependencies:
 
 ```Scala
-libraryDependencies += "com.google.cloud" % "google-cloud-mediatranslation" % "0.9.6"
+libraryDependencies += "com.google.cloud" % "google-cloud-mediatranslation" % "0.11.0"
 ```
 
 ## Authentication
