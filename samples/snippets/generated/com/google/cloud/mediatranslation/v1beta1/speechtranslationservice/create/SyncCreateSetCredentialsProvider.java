@@ -16,35 +16,30 @@
 
 package com.google.cloud.mediatranslation.v1beta1.samples;
 
-// [START mediatranslation_v1beta1_generated_speechtranslationserviceclient_streamingtranslatespeech_async]
-import com.google.api.gax.rpc.BidiStream;
+// [START mediatranslation_v1beta1_generated_SpeechTranslationService_Create_SetCredentialsProvider_sync]
+import com.google.api.gax.core.FixedCredentialsProvider;
 import com.google.cloud.mediatranslation.v1beta1.SpeechTranslationServiceClient;
-import com.google.cloud.mediatranslation.v1beta1.StreamingTranslateSpeechRequest;
-import com.google.cloud.mediatranslation.v1beta1.StreamingTranslateSpeechResponse;
+import com.google.cloud.mediatranslation.v1beta1.SpeechTranslationServiceSettings;
+import com.google.cloud.mediatranslation.v1beta1.myCredentials;
 
-public class AsyncStreamingTranslateSpeech {
+public class SyncCreateSetCredentialsProvider {
 
   public static void main(String[] args) throws Exception {
-    asyncStreamingTranslateSpeech();
+    syncCreateSetCredentialsProvider();
   }
 
-  public static void asyncStreamingTranslateSpeech() throws Exception {
+  public static void syncCreateSetCredentialsProvider() throws Exception {
     // This snippet has been automatically generated and should be regarded as a code template only.
     // It will require modifications to work:
     // - It may require correct/in-range values for request initialization.
     // - It may require specifying regional endpoints when creating the service client as shown in
     // https://cloud.google.com/java/docs/setup#configure_endpoints_for_the_client_library
-    try (SpeechTranslationServiceClient speechTranslationServiceClient =
-        SpeechTranslationServiceClient.create()) {
-      BidiStream<StreamingTranslateSpeechRequest, StreamingTranslateSpeechResponse> bidiStream =
-          speechTranslationServiceClient.streamingTranslateSpeechCallable().call();
-      StreamingTranslateSpeechRequest request =
-          StreamingTranslateSpeechRequest.newBuilder().build();
-      bidiStream.send(request);
-      for (StreamingTranslateSpeechResponse response : bidiStream) {
-        // Do something when a response is received.
-      }
-    }
+    SpeechTranslationServiceSettings speechTranslationServiceSettings =
+        SpeechTranslationServiceSettings.newBuilder()
+            .setCredentialsProvider(FixedCredentialsProvider.create(myCredentials))
+            .build();
+    SpeechTranslationServiceClient speechTranslationServiceClient =
+        SpeechTranslationServiceClient.create(speechTranslationServiceSettings);
   }
 }
-// [END mediatranslation_v1beta1_generated_speechtranslationserviceclient_streamingtranslatespeech_async]
+// [END mediatranslation_v1beta1_generated_SpeechTranslationService_Create_SetCredentialsProvider_sync]

@@ -16,29 +16,27 @@
 
 package com.google.cloud.mediatranslation.v1beta1.samples;
 
-// [START mediatranslation_v1beta1_generated_speechtranslationserviceclient_create_setcredentialsprovider1_sync]
+// [START mediatranslation_v1beta1_generated_SpeechTranslationService_Create_SetEndpoint_sync]
 import com.google.cloud.mediatranslation.v1beta1.SpeechTranslationServiceClient;
 import com.google.cloud.mediatranslation.v1beta1.SpeechTranslationServiceSettings;
+import com.google.cloud.mediatranslation.v1beta1.myEndpoint;
 
-public class SyncCreateSetCredentialsProvider1 {
+public class SyncCreateSetEndpoint {
 
   public static void main(String[] args) throws Exception {
-    syncCreateSetCredentialsProvider1();
+    syncCreateSetEndpoint();
   }
 
-  public static void syncCreateSetCredentialsProvider1() throws Exception {
+  public static void syncCreateSetEndpoint() throws Exception {
     // This snippet has been automatically generated and should be regarded as a code template only.
     // It will require modifications to work:
     // - It may require correct/in-range values for request initialization.
     // - It may require specifying regional endpoints when creating the service client as shown in
     // https://cloud.google.com/java/docs/setup#configure_endpoints_for_the_client_library
     SpeechTranslationServiceSettings speechTranslationServiceSettings =
-        SpeechTranslationServiceSettings.newBuilder()
-            .setTransportChannelProvider(
-                SpeechTranslationServiceSettings.defaultHttpJsonTransportProviderBuilder().build())
-            .build();
+        SpeechTranslationServiceSettings.newBuilder().setEndpoint(myEndpoint).build();
     SpeechTranslationServiceClient speechTranslationServiceClient =
         SpeechTranslationServiceClient.create(speechTranslationServiceSettings);
   }
 }
-// [END mediatranslation_v1beta1_generated_speechtranslationserviceclient_create_setcredentialsprovider1_sync]
+// [END mediatranslation_v1beta1_generated_SpeechTranslationService_Create_SetEndpoint_sync]
